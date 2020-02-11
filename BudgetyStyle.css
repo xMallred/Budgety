@@ -1,0 +1,105 @@
+body { 
+    margin: 0 auto; 
+    background-position:center; 
+    background-size: contain; 
+} 
+div {
+    height: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+#header { 
+    font-size:40px; 
+    color:#ffffff; 
+    font-weight:bold; 
+    padding:10px 0px 10px 10px;
+    background-color:darkslategray;
+}
+
+#menu {
+    float: right;
+    margin-right: 10px;
+}
+
+.navigation {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.container {
+    padding-left: 10px; 
+    overflow: hidden;
+}
+
+#finacialInfo {
+    width: 40%;
+    float: left;
+}
+
+#payInformation {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#expenseInformation {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#debtInformation {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#finacialTables {
+    float: left;
+    width: 55%;
+    background-color: burlywood;
+    height: 100%;
+}
+
+#budgetTableInfo {
+    margin-left: 43%;
+}
+
+#budgetTableDiv {
+    overflow-x: auto;
+}
+
+#budgetTable {
+    overflow-x: scroll;
+    overflow-x: auto;
+    border: 1px solid black; 
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#debtTableInfo {
+    margin-left: 21%;
+}
+
+#debtTableDiv {
+    overflow-x: auto;
+}
+
+#debtTable {
+    overflow-x: scroll;
+    overflow-x: auto;
+    border: 1px solid black; 
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td { 
+    border: 1px solid black; 
+    border-collapse: collapse;
+    max-width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}

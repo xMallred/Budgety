@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Budgety</title>
+        <link rel="stylesheet" type = "text/css" href="BudgetyStyle.css">
+    </head>
+
+    <body>
+    
+        
+        <div id = "header">
+            Budgety
+            <div id = "menu">
+                <div class = "navigation"></div>
+                <div class = "navigation"></div>
+                <div class = "navigation"></div>
+            </div>
+        </div>
+
+        <div class = "container">
+            <div id = "finacialInfo">
+                <form class = "payForm">
+                    <br>
+                    <div id = "payContainer">
+                        <h3 id= "payInformation" >Pay Information</h3>
+                        Pay Each Paycheck: <input id= "payCheck" type= "number" value = 1000><br>
+                        Pay Frequency: 
+                        <select id= "payFrequency" name="paycheckFrequency">
+                            <option value = "biWeekly">Bi-Weekly</option>
+                            <option value = "semiMonthly">Semi-Monthly</option>
+                            <option value = "monthly">Monthly</option>
+                        </select><br>
+                        Next Pay Day: <input id= "payDay" type= "date"><br>
+                        Budget Length By Paycheck: <input id= "budgetLength" type = "number" value = 10><br>
+                    </div>
+                    <h3 id = "expenseInformation">Expense Information</h3>
+                    <div id = "expenseContainer">
+                        <div id = "expense1Container">
+                            Expense #1: <input id= "expense1Name" type= "text" placeholder="Expense Name">
+                            <input id = "expense1Amount" type = "number" placeholder="Expense Amount">
+                            <select id = "expense1Frequency">
+                                <option value = "onceAPaycheck">Once A Pay Check</option>
+                                <option value = "onceAMonth">Once A Month</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input id = "addExpense" type = "button" value = "Add Expense""><br>
+                    <h3 id = "debtInformation">Debt Information</h3>
+                    <div id = "debtContainer">
+                        <div id = "debt1Container">
+                            Debt #1: <input id = "debt1Name" type= "text" placeholder="Debt Name">
+                            <input id = "debt1Amount" type = "number" placeholder="Debt Amount">
+                            <input id = "debt1InterestPercent" type = "number" placeholder="Debt Interest %">
+                        </div>
+                    </div>
+                    <input id = "addDebt" type = "button" value = "Add Debt""><br><br>
+                </form>
+            </div>
+            <br>
+            <div id = "finacialTables">
+                <div id = "budgetTableDiv">
+                    <h3 id= "budgetTableInfo" >Budget Table</h3>
+                    <table id='budgetTable'></table>
+                </div>
+
+                <div id = "debtTableDiv">
+                    <h3 id= "debtTableInfo">Debt Table</h3> 
+                    <table id='debtTable'></table>
+                </div>
+            </div>
+        </div>
+
+        
+    </body>
+
+    <script src="BudgetyScripts.js" type="module"></script>
+</html>
