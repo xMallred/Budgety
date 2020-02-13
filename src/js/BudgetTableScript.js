@@ -131,6 +131,7 @@ export var BudgetTable = {
             for(let j = 0; j < budgetLength; j++) {
                 if (payFrequency === "monthly") {
                     this.addCell(expenseRow, "-$" + expenseAmount);
+                    currentBalances[j] = currentBalances[j] + parseFloat(expenseAmount);
                 }
                 else {
                     if(expenseFrequency === "onceAMonth") {
@@ -205,10 +206,5 @@ export var BudgetTable = {
         td.innerHTML = val;
         td.style = "font-weight:bold";
         tr.appendChild(td)
-    },
-
-    getLastDayOfTable: function() {
-        var val = document.querySelector('budgetTable tr:first-child td:last-child').innerHTML
-        console.log(val);
     }
 };

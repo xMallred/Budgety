@@ -58,7 +58,7 @@ section {
 
 #finacialTables {
     float: left;
-    width: 55%;
+    width: 57%;
     background-color: burlywood;
     height: 100%;
 }
@@ -68,7 +68,7 @@ section {
 }
 
 #budgetTableDiv {
-    overflow-x: auto;
+    overflow: auto;
 }
 
 #budgetTable {
@@ -80,19 +80,18 @@ section {
 }
 
 #debtTableInfo {
-    margin-left: 21%;
+    margin-left: 43%;
 }
 
 #debtTableDiv {
-    overflow-x: auto;
+    overflow: auto;
+    width: 100%;
 }
 
 #debtTable {
-    overflow-x: scroll;
-    overflow-x: auto;
     border: 1px solid black; 
     border-collapse: collapse;
-    width: 50%;
+    width: 100%;
 }
 
 th, td { 

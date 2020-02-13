@@ -16,9 +16,12 @@ var expenseFrequencyField = document.getElementById("expense1Frequency");
 var addExpenseField = document.getElementById("addExpense");
 
 var debtNameField = document.getElementById("debt1Name");
+var debtPrincipalField = document.getElementById("debt1Principal");
 var debtAmountField = document.getElementById("debt1Amount");
 var debtInterestField = document.getElementById("debt1InterestPercent");
 var debtField = document.getElementById("addDebt");
+
+var refreshButtonField = document.getElementById("refreshButton");
 
 document.addEventListener("DOMContentLoaded", function() {
     BudgetTable.createTable();
@@ -91,6 +94,15 @@ debtInterestField.addEventListener("change", function() {
     DebtTable.createTable();
 });
 
+debtPrincipalField.addEventListener("change", function() {
+    DebtTable.createTable();
+});
+
 debtField.addEventListener("click", function(){
     addDebt();
+});
+
+refreshButtonField.addEventListener("click", function() {
+    BudgetTable.createTable();
+    DebtTable.createTable();
 });

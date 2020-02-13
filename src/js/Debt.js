@@ -20,6 +20,16 @@ export function addDebt() {
     newDebtContainer.appendChild(debtName);
     newDebtContainer.appendChild(document.createTextNode( '\u00A0' ));
 
+    var debtPrincipal = document.createElement("input");
+    debtPrincipal.id = "debt" + numberOfDebts + "Principal";
+    debtPrincipal.type = "number";
+    debtPrincipal.placeholder = "Principal Amount";
+    debtPrincipal.addEventListener("change", function() {
+        DebtTable.createTable();
+    })
+    newDebtContainer.appendChild(debtPrincipal);
+    newDebtContainer.appendChild(document.createTextNode( '\u00A0' ));
+
     var debtAmount = document.createElement("input");
     debtAmount.id = "debt" + numberOfDebts + "Amount";
     debtAmount.type = "number";

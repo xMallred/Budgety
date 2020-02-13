@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Budgety</title>
-        <link rel="stylesheet" type = "text/css" href="BudgetyStyle.css">
+        <link rel="stylesheet" type = "text/css" href="/src/css/BudgetyStyle.css">
     </head>
 
     <body>
@@ -49,11 +49,13 @@
                     <div id = "debtContainer">
                         <div id = "debt1Container">
                             Debt #1: <input id = "debt1Name" type= "text" placeholder="Debt Name">
-                            <input id = "debt1Amount" type = "number" placeholder="Debt Amount">
+                            <input id = "debt1Principal" type = "number" placeholder="Principal Amount">
+                            <input id = "debt1Amount" type = "number" placeholder="Starting Balance">
                             <input id = "debt1InterestPercent" type = "number" placeholder="Debt Interest %">
                         </div>
                     </div>
                     <input id = "addDebt" type = "button" value = "Add Debt""><br><br>
+                    <input id = "refreshButton" type = "button" value = "Refresh Tables">
                 </form>
             </div>
             <br>
@@ -67,11 +69,12 @@
                     <h3 id= "debtTableInfo">Debt Table</h3> 
                     <table id='debtTable'></table>
                 </div>
+                <br>
             </div>
         </div>
 
         
     </body>
 
-    <script src="BudgetyScripts.js" type="module"></script>
+    <script src="/src/js/BudgetyScripts.js" type="module"></script>
 </html>
