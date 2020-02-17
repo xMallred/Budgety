@@ -34,27 +34,33 @@ menuField.addEventListener("click", function() {
 
 payCheckField.addEventListener("change", function(){
     BudgetTable.createTable();
+    DebtTable.createTable();
 });
 
 payFrequencyField.addEventListener("change", function(){
     budgetLengthField.value = 10;
     BudgetTable.createTable();
+    DebtTable.createTable();
 });
 
 payDayField.addEventListener("change", function() {
     BudgetTable.createTable();
+    DebtTable.createTable();
 });
 
 budgetLengthField.addEventListener("change", function() {
     BudgetTable.createTable();
+    DebtTable.createTable();
 });
 
 expenseNameField.addEventListener("change", function() {
     BudgetTable.createTable();
+    DebtTable.createTable();
 });
 
 expenseAmountField.addEventListener("change", function() {
     BudgetTable.createTable();
+    DebtTable.createTable();
 });
 
 expenseFrequencyField.addEventListener("change", function(){
@@ -67,6 +73,7 @@ expenseFrequencyField.addEventListener("change", function(){
         expenseDate.placeholder = "Day Of Expense";
         expenseDate.addEventListener("change", function() {
             BudgetTable.createTable();
+            DebtTable.createTable();
         });
         expenseContainer.appendChild(expenseDate);
     }
@@ -76,6 +83,7 @@ expenseFrequencyField.addEventListener("change", function(){
         expenseContainer.removeChild(expenseDate);
     }
     BudgetTable.createTable();
+    DebtTable.createTable();
 });
 
 addExpenseField.addEventListener("click", function(){
@@ -83,18 +91,22 @@ addExpenseField.addEventListener("click", function(){
 })
 
 debtNameField.addEventListener("change", function() {
+    BudgetTable.createTable();
     DebtTable.createTable();
 });
 
 debtAmountField.addEventListener("change", function() {
+    BudgetTable.createTable();
     DebtTable.createTable();
 });
 
 debtInterestField.addEventListener("change", function() {
+    BudgetTable.createTable();
     DebtTable.createTable();
 });
 
 debtPrincipalField.addEventListener("change", function() {
+    BudgetTable.createTable();
     DebtTable.createTable();
 });
 

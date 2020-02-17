@@ -2,6 +2,7 @@ body {
     margin: 0 auto; 
     background-position:center; 
     background-size: contain; 
+    background-color: burlywood;
 } 
 div {
     height: 100%;
@@ -58,8 +59,7 @@ section {
 
 #finacialTables {
     float: left;
-    width: 57%;
-    background-color: burlywood;
+    width: 58%;
     height: 100%;
 }
 
@@ -101,4 +101,5 @@ th, td {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; 
+    background-color: floralwhite;
 }

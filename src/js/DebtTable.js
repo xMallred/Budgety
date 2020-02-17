@@ -65,14 +65,16 @@ export var DebtTable = {
                         console.log("interest added: " + interestAccrued);
                     }
 
+                    console.log("here")
                     if(debtBeingPaidRowNumber != -1) {
                         var budgetTableRowChildren = budgetTableRows[debtBeingPaidRowNumber].children;
                         //checks if payment was made, then adds payment to 'amountPaid'
                         if(budgetTableRowChildren[z].innerHTML != "") {
                             console.log("Remaining Balance before payment: " + remainingBalance);
                             console.log("Remainig Principal Before Payment: " + remainingPrincipal)
-                            var loanPayment = budgetTableRowChildren[z].innerHTML.match(/\d/g);
-                            loanPayment = loanPayment.join(""); 
+                            var loanPayment = budgetTableRowChildren[z].innerHTML.match(/[\d\.]+/);
+                            console.log("amount paid: " + amountPaid);
+
                             amountPaid = parseFloat(amountPaid) + parseFloat(loanPayment);
                             remainingBalance = parseFloat(remainingBalance) - parseFloat(loanPayment);
                             if(remainingBalance < 0) {
