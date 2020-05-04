@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Budgety Login</title>
+  <link rel="stylesheet" type="text/css" href="/src/css/Login.css">
+</head>
+
+<body>
+    <div class = loginPage>
+        <div class = "title">
+            <h1 id = "title">Budgety</h1>
+            <h2 id = "subTitle">Your Friendly Budgeting App</h2>
+        </div>
+        <div class = "buttons">
+            <input id="loginButton" type="button" value="Login">
+            <input id="createAccount" type="button" value="Create Account">
+        </div>
+
+        <div class = "modal" id = "loginModal">
+            <div class = "modalContent">
+                <span id = "closeLoginModalId" class="close">&times;</span>
+                <div id = "loginForm" class = "form">
+                    <label class = "textField" for="email">Email Address</label>
+                    <input id = "emailAddressField" type = "text" placeholder = "Enter Email Address" name = "email">
+                    <label class = "textField" for = "password">Password</label>
+                    <input id = "passwordAddressField" type = "password" placeholder = "Enter Password" name = "password">
+                    <input id = "loginButton2" type = "button" value = "Login">
+                </div>
+            </div>
+        </div>
+
+        <div class = "modal" id = "createModal">
+            <div class = modalContent>
+                <span id = "closeCreateModalId" class="close">&times;</span>
+                <div id = "createForm" class = "form">
+                    <label class = "textField" for = "firstName">First Name</label>
+                    <input id = "createFirstNameField" type = "text" placeholder = "Enter First Name" name = "firstName">
+                    <label class = "textField" for = "lastName">Last Name</label>
+                    <input id = "createLastNameField" type = "text" placeholder = "Enter Last Name" name = "lastName">
+                    <label class = "textField" for="email">Email Address</label>
+                    <input id = "createEmailAddressField" type = "text" placeholder = "Enter Email Address" name = "email">
+                    <label class = "textField" for = "password">Password</label>
+                    <input id = "createPasswordField" type = "password" placeholder = "Enter Password" name = "password">
+                    
+                    <input id = "createAccountButton" type = "button" value = "Create Account">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="/src/js/Login.js" type="module"></script>
+</html>
